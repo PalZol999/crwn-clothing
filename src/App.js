@@ -1,5 +1,5 @@
-import './categories.styles.css'
-//import './App.css';
+
+import Directory from './components/directory/directory-menu.component'
 
 const App= () => {
   const categories =
@@ -33,19 +33,11 @@ const App= () => {
     
   
   return (
-    <div className="categories-container">
+  
     
-      {categories.map(({title, id, imageUrl}) => (
-        <div key={id} className="category-container" style={{backgroundImage: `url(${imageUrl})`}}>
-          <div className='background-image' />
-          <div className="category-body-container" >
-        <h2 style={{margin: '0 6px 0'}}  className="title">{title}</h2>
-        <p className="shopNow">Shop Now</p>
-      </div>
-      </div>
+        <Directory categories={categories}/>
      
-      ))}
-      </div>
+    
   );
 }
 
