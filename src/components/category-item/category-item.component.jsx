@@ -1,4 +1,5 @@
-import './category-item.styles.css'
+//import './category-item.styles.css'
+import '/Users/admin/Desktop/Projects/React/crwn-clothing/src/categories.styles.scss'
 
 const CategoryItem = ({category}) => {
     const {imageUrl, title} = category
@@ -7,7 +8,7 @@ const CategoryItem = ({category}) => {
         <div className="category-container" style={{backgroundImage: `url(${imageUrl})`}}>
         <div className='background-image' />
         <div className="category-body-container" >
-      <h2 style={{margin: '0 6px 0'}}  className="title">{title}</h2>
+      <h2  className="title">{title}</h2>
       <p className="shopNow">Shop Now</p>
     </div>
     </div>
