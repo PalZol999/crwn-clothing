@@ -8,7 +8,6 @@ import Button from '../button/button.component'
 const deafaultFormFields= {
     email: '',
     password:'',
-
 }
 
 const SignInForm = () => {
@@ -21,19 +20,21 @@ const SignInForm = () => {
     }
 
     const signInWithGoogle = async () => {
-        const {user} = await signInWithGooglePopup()
-        await createUserDocumentFromAuth(user)
+       await signInWithGooglePopup()
+       
     }
-
 
     const handleSubmit = async (event) => {
         event.preventDefault()
 
         try {
-         const response = await signInAuthUserWithEmailAndPassword (email, password)
+         const {user} = await signInAuthUserWithEmailAndPassword (
+            email, 
+            password
+         )
          resetFormFileds()
-         
-        }catch (error){ if(error === "auth/wrong-password") { alert ('PW falsey')}
+         }catch (error)
+         { if(error === "auth/wrong-password") { alert ('PW falsey')}
 
     }
     }
