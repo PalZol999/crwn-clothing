@@ -39,7 +39,7 @@ const Navigation = ()=> {
             
         </div>
 
-               {isCartOpen && <CartDropdown />}  
+               {isCartOpen && <CartDropdown />}   
 
         </div>
  
