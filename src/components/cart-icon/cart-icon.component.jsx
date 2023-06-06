@@ -11,7 +11,8 @@ const CartIcon = () => {
     return (
         <div className='cart-icon-container' 
         onMouseEnter={() => toggleIsCartOpen(true)} 
-        onMouseLeave={() => toggleIsCartOpen(false)}>
+        onClick= {() => toggleIsCartOpen(false)}
+       >
             <ShoppingIcon className='shopping-icon'/>
             <span className='item-count'>{cartCount}</span>
 
