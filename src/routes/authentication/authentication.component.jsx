@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import {getRedirectResult} from 'firebase/auth'
-import './authentication.styles.scss'
+import {
+    AuthenticationContainer
+} from './authentication.styles.jsx'
 
 import { 
   
@@ -22,7 +24,7 @@ const Authentication = () => {
 
    
 return (
-    <div className='authentication-container'>
+    <AuthenticationContainer>
     
 
         <SignInForm />
@@ -30,7 +32,7 @@ return (
      
 
        
-    </div>
+    </AuthenticationContainer>
 )
 
 }
