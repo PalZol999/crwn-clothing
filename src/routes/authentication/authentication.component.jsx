@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import {getRedirectResult} from 'firebase/auth'
+
 import {
     AuthenticationContainer
 } from './authentication.styles.jsx'
